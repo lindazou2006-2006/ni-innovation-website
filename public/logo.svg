@@ -1,0 +1,7 @@
+<svg width="320" height="84" viewBox="0 0 320 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 42C15 27.1 27.1 15 42 15H58V31H42C35.9 31 31 35.9 31 42C31 48.1 35.9 53 42 53H58V69H42C27.1 69 15 56.9 15 42Z" fill="#0F5FAE"/>
+  <path d="M69 15H85V69H69V15Z" fill="#4D9BE6"/>
+  <path d="M42 34H111V50H42V34Z" fill="#0F5FAE"/>
+  <text x="128" y="43" fill="#183B56" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="3">NIIN</text>
+  <text x="128" y="63" fill="#0F5FAE" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">NI INNOVATION</text>
+</svg>

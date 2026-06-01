@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0f5fae;
+  --secondary: #4d9be6;
+  --light: #f4f8fc;
+  --dark: #183b56;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  color: var(--dark);
+  background: #fff;
+  font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+}
+
+::selection { color: #fff; background: var(--primary); }
+
+.container-medical {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.section-pad { padding-block: 112px; }
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.section-label::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--secondary);
+}
+
+.medical-card {
+  border: 1px solid rgba(15, 95, 174, .09);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 12px 32px rgba(24, 59, 86, .08);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.medical-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(15, 95, 174, .2);
+  box-shadow: 0 22px 50px rgba(15, 95, 174, .15);
+}
+
+.medical-pattern {
+  background-image: url("/medical-grid.svg");
+  background-repeat: no-repeat;
+  background-position: right -110px center;
+  background-size: 570px;
+}
+
+@media (max-width: 768px) {
+  .container-medical { width: min(100% - 28px, 1180px); }
+  .section-pad { padding-block: 76px; }
+}
